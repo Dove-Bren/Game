@@ -18,6 +18,8 @@ public class Battle {
 	
 	private boolean inProgress;
 	
+	private Player activePlayer;
+	
 	public Battle() {
 		teams = new HashSet<Team>();
 		inProgress = false;
@@ -40,6 +42,30 @@ public class Battle {
 		}
 		
 		turner = new TurnControl(players);	
+		
+		activePlayer = turner.getNext();
+		
+		activePlayer.startTurn();
+	}
+	
+	public boolean registerTurnEnd(Player player) {
+		if (player == null) {
+			return false;
+		}
+		
+		if (player.getID() != activePlayer.getID()) {
+			return false;
+		}
+		
+		//our simple check worked out, so proceed
+		
+		activePlayer = turner.getNext();
+		
+		activePlayer.startTurn();
+		
+		//TODO add call to display here
+		
+		return true;
 	}
 	
 	

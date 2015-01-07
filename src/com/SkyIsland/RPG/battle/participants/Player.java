@@ -6,6 +6,8 @@ public abstract class Player {
 	
 	protected int ID;
 	
+	protected Team team;
+	
 	public Player(int ID, String name) {
 		this.ID = ID;
 		this.name = name;
@@ -18,6 +20,16 @@ public abstract class Player {
 	public int getID() {
 		return this.ID;
 	}
+	
+	public void setTeam(Team team) {
+		this.team = team;
+	}
+	
+	public Team getTeam() {
+		return this.team;
+	}
+	
+	public abstract void damage(int amount);
 	
 	public abstract void startTurn();
 	
