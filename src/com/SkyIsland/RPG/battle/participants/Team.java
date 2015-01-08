@@ -18,6 +18,7 @@ public class Team {
 	public Team(Battle battle, String name) {
 		this.name = name;
 		this.battle = battle;
+		battle.registerTeam(this);
 		players = new LinkedList<Player>();
 	}
 	

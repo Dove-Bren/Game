@@ -1,4 +1,5 @@
-package com.SkyIsland.RPG.display;
+package com.SkyIsland.RPG.display.Leafs;
+
 
 /**
  * A Leaf is a package of information meant to be read and processed by a 

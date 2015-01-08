@@ -29,7 +29,7 @@ public abstract class Player {
 		return this.team;
 	}
 	
-	public abstract void damage(int amount);
+	public abstract void damage(Player damager, int amount);
 	
 	public abstract void startTurn();
 	
