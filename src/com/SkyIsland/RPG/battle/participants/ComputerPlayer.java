@@ -57,10 +57,12 @@ public class ComputerPlayer extends Player {
 	public void damage(Player damager, int amount) {
 		this.health -= amount;
 
-		team.getBattle().getDisplay().display(new TextLeaf(ID, "Recieved damage: " + ID + " -> " + amount, getName() + " recieved " + amount + "points of damage from " + damager.getName()));
+		team.getBattle().getDisplay().display(new TextLeaf(ID, "Recieved damage: " + ID + " -> " + amount, getName() + " recieved " + amount + " points of damage from " + damager.getName()));
 		//TODO IS DEAD?
 		if (health <= 0) {
-			while (true) {
+			team.getBattle().getDisplay().display(new TextLeaf(ID, "Death: " + ID, getName() + " has been slain!\n" +
+					"CPU: " + health + "\tPlayer: " + ((HumanPlayer) damager).getHealth()));
+			while (true) { 
 				
 			}
 		}

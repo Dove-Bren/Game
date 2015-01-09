@@ -33,6 +33,11 @@ public class TurnControl {
 	}
 	
 	public Player getNext() {
+		if (!iterator.hasNext()) {
+			while (iterator.hasPrevious()) {
+				iterator.previous();
+			}
+		}
 		return iterator.next();
 	}
 	
