@@ -13,4 +13,6 @@ public interface Key {
 	 * must then be registered with the {@link com.SkyIsland.RPG.input.Input Input} being used.
 	 */
 	public void fire();
+	
+	//TODO make a PRESS RELEASE AND HOLD event
 }
