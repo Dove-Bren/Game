@@ -21,16 +21,6 @@ public class TurnControl {
 		iterator = turnList.listIterator();
 	}
 	
-	public TurnControl(Collection<Player> ... players) {
-		turnList = new LinkedList<Player>();
-		for (Collection<Player> p: players) {
-			turnList.addAll(p);
-		}
-		
-		Collections.shuffle(turnList);
-		
-		iterator = turnList.listIterator();
-	}
 	
 	public Player getNext() {
 		if (!iterator.hasNext()) {
