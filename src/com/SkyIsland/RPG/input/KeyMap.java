@@ -19,7 +19,8 @@ public class KeyMap {
 	 * Registers the passed event to the passed key object.<br />
 	 * As long as this KeyMap has been applied to the active {@link com.SkyIsland.RPG.input.Input Input}
 	 * and no map has overridden this mapping by being applied later, the passed Key's 
-	 * {@link com.SkyIsland.RPG.input.Key#fire() fire()} method will be called.
+	 * {@link com.SkyIsland.RPG.input.Key#pressed() pressed()} and 
+	 * {@link com.SkyIsland.RPG.input.Key#released() released()} method will be called.
 	 * @param event
 	 * @param key
 	 */
