@@ -1,4 +1,4 @@
-package com.SkyIsland.RPG.display.Leafs;
+package com.SkyIsland.GameSuite.display.Leafs;
 
 public class TextLeaf extends Leaf {
 	

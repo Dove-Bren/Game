@@ -1,12 +1,12 @@
 package com.SkyIsland.RPG;
 
+import com.SkyIsland.GameSuite.display.Display;
+import com.SkyIsland.GameSuite.display.console.TextDisplay;
 import com.SkyIsland.RPG.battle.Battle;
 import com.SkyIsland.RPG.battle.participants.ComputerPlayer;
 import com.SkyIsland.RPG.battle.participants.HumanPlayer;
 import com.SkyIsland.RPG.battle.participants.Player;
 import com.SkyIsland.RPG.battle.participants.Team;
-import com.SkyIsland.RPG.display.Display;
-import com.SkyIsland.RPG.display.console.TextDisplay;
 
 public class Driver {
 

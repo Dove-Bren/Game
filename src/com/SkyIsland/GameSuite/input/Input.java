@@ -1,4 +1,4 @@
-package com.SkyIsland.RPG.input;
+package com.SkyIsland.GameSuite.input;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -27,14 +27,27 @@ public abstract class Input implements KeyListener {
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-		// TODO Auto-generated method stub
+		Key key = null;
+		key = Input.map.getKey(e);
 		
+		if (key == null) {
+			//no registered key binding
+			return; 
+		}
+		
+		key.pressed();
 	}
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		// TODO Auto-generated method stub
+		Key key = null;
+		key = Input.map.getKey(e);
 		
+		if (key == null) {
+			return;
+		}
+		
+		key.released();
 	}
 
 	@Override

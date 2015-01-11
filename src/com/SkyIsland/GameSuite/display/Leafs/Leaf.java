@@ -1,9 +1,9 @@
-package com.SkyIsland.RPG.display.Leafs;
+package com.SkyIsland.GameSuite.display.Leafs;
 
 
 /**
  * A Leaf is a package of information meant to be read and processed by a 
- * {@link com.SkyIsland.RPG.display.Display Display}.
+ * {@link com.SkyIsland.GameSuite.display.Display Display}.
  * <p>Displays will handle different Leaf objects based on how they display information.</p>
  * @author Skyler
  *

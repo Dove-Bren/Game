@@ -3,7 +3,7 @@ package com.SkyIsland.RPG.battle.participants;
 import java.util.List;
 import java.util.Random;
 
-import com.SkyIsland.RPG.display.Leafs.TextLeaf;
+import com.SkyIsland.GameSuite.display.Leafs.TextLeaf;
 
 public class HumanPlayer extends Player {
 	

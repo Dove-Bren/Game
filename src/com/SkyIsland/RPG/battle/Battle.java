@@ -4,10 +4,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+import com.SkyIsland.GameSuite.display.Leafs.TextLeaf;
+import com.SkyIsland.GameSuite.display.console.TextDisplay;
 import com.SkyIsland.RPG.battle.participants.Player;
 import com.SkyIsland.RPG.battle.participants.Team;
-import com.SkyIsland.RPG.display.Leafs.TextLeaf;
-import com.SkyIsland.RPG.display.console.TextDisplay;
 
 /**
  * Represents an active battle going on.

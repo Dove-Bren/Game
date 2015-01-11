@@ -1,11 +1,11 @@
-package com.SkyIsland.RPG.display.console;
+package com.SkyIsland.GameSuite.display.console;
 
 import java.io.OutputStream;
 import java.io.PrintStream;
 
-import com.SkyIsland.RPG.display.Display;
-import com.SkyIsland.RPG.display.Leafs.Leaf;
-import com.SkyIsland.RPG.display.Leafs.TextLeaf;
+import com.SkyIsland.GameSuite.display.Display;
+import com.SkyIsland.GameSuite.display.Leafs.Leaf;
+import com.SkyIsland.GameSuite.display.Leafs.TextLeaf;
 
 /**
  * Takes leaves and displays their alt text to the wrapped output stream.
@@ -28,7 +28,7 @@ public class TextDisplay implements Display {
 	}
 	
 	/**
-	 * Takes the passed leaf and displays the text stored as {@link com.SkyIsland.RPG.display.Leafs.Leaf#altText altText}
+	 * Takes the passed leaf and displays the text stored as {@link com.SkyIsland.GameSuite.display.Leafs.Leaf#altText altText}
 	 */
 	public void display(Leaf data) {
 		output.println(data.getAltText());
